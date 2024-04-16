@@ -1,12 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Yellow Fever</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow Fever</title>
+    <h1 align="center"><font size="800">Yellow Fever</font>
+    <br>
+    </h1>
+
 </head>
-  <body>
-  <h1 align="center"> Yellow Fever
-  <br><img src="parfum.png" width="180">
-  </h1>
+<br>
+<body bgcolor="whitesmoke">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            background-color:black
+            width=100;
+            height：20vmin;
+            margin：20vmin auto;
+            /* display: table;*/
+            display：flex
+        }
+
+        li{
+            /* display: table-cell; */
+            line-height: 8vmin;
+            text-align: center;
+            display: inline-block;
+            width: 20%;
+        }
+
+        li:hover{
+            background-color:palegreen
+        }
+        
+        .color{
+            background-color: salmon
+        }
+
+        .main div{
+            width: 80%;
+            height: 100px;
+            margin: 0 auto;
+        }
+    </style>
+    <!--腰部导航-->
+    <ul align="center">
+        <li class="color">典味</li>
+        <li >气泡</li>
+        <li >0-1发酵故事</li></align>
+    </ul>
+    <br><br>
+    <div class="main" align="center">
+        <div class="item" style="display: block;">
+            <img src="bleu.jpg" width="100">
+            <br> 广泛深入密切，以去人道主义作为基本准则。
+        </div>
+        <div class="item" style="display: none;">
+            <img src="rose.jpg" width="100">
+            <br>抄写是一种扬弃的能力。
+        </div>
+        <div class="item" style="display: none;">
+            <img src="verte.jpg" width="100">
+            <br>在当前复杂形势下，化繁为简。
+        </div>
+    </div>
+    <script>
+        var lis = document.querySelectorAll('li')
+        var items = document.querySelectorAll('.item')
+        for (i = 0; i < lis.length; i++) {
+            lis[i].setAttribute('index', i)
+            lis[i].onclick = function () {
+                for (var i = 0; i < lis.length; i++) {
+                    lis[i].className = ''
+                }
+                this.className = 'color'
+                var index = this.getAttribute('index')
+                for (var i = 0; i < items.length; i++) {
+                    items[i].style.display = "none"
+                }
+                items[index].style.display = 'block'
+            }
+        }
+    </script>
+    </h2>
 </body>
+
+<footer>
+    <br><br><br><br><br><br><br><br><br>
+    <h3 align="center"><font size="5">
+    <img src="mahon.jpg" width="180">
+    <br><br>
+    Je ne suis pas sortie de l'alcool.</font>
+    <br><br><br>
+    订座电话：8964
+    <br><br><br><br>
+</footer>
 </html>
