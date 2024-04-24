@@ -17,8 +17,8 @@
     display:block;
     width: 100%;
     margin-bottom: -20px;
-    background-color:#f3f1f1;
-    color:#dbd2d2;
+    background-color:#ffffff;
+    color:#e0e0e0;
     text-align: center;
   }
   .mobile-alert-banner p {
@@ -59,7 +59,7 @@
   }
   hr.divider {
     border: none;
-    border-top: 3px solid #ececec;
+    border-top: 2px solid #e0e0e0;
     height: 1px;
     margin: 0;
   }
@@ -140,7 +140,7 @@
 </head>
 
 <body>
-  <div class="mobile-alert-banner"><img src="bar.png" width=100%></div>
+  <div class="mobile-alert-banner"><h3>黃種人<br>98</h3></div>
   <header>
     <img src="shake.png" width=65%>
     <br>
@@ -207,9 +207,9 @@
     <div class="tab3-text">
     <h1>Contact Us</h1>
     <img src="right.jpg" style="width: 30px">
-    <p>Founder and Host | <b>YU</b></p>
+    <p>Founder and Host | <b>Y</b></p>
     <img src="right.jpg" style="width: 30px">
-    <p>Visual Producer | <b>CHEN</b></p>
+    <p>Visual Producer | <b>C</b></p>
     </div>
   </div>
   <footer>
