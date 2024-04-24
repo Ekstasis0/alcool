@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>马天尼</title>
+</head>
+
+<style>
+  body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  .mobile-alert-banner {
+    display:block;
+    width: 100%;
+    background-color:#ad373e;
+    color:#ececec;
+    text-align: center;
+  }
+  .mobile-alert-banner p {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  header {
+    background-color:#ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+  }
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: x-small;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    width: calc(40% - 20px);
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 1px;
+    text-align: center;
+    padding:10px;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1px;
+    margin-bottom: 1px;
+  }
+  .card h2 {
+    font-size: 12px;
+    margin-bottom: 1px;
+    color:#505050
+  }
+  .card p {
+    font-size: 10px;
+    margin-bottom: 1px;
+    color:#9a9a9a;
+  }
+  footer {
+    background-color: #ececec;
+    color: #454545;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+
+<body>
+  <div class="mobile-alert-banner">
+    <a href="#" onclick="goBack()">return to homepage</a>
+  </div>
+  <header>
+    <h2>Martini</h2>
+  </header>
+
+  <div class="container tab-content active">
+  <div class="card">
+    <img src="osho.png" alt="Cocktail3">
+    <h2>奥修</h2>
+    <p>伏特加 干味美思<br>莉蕾白 苦艾酒</p>
+  </div>
+  <div class="card">
+    <img src="ouyang.png" alt="Cocktail4">
+    <h2>欧阳</h2>
+    <p>黑糖烧酒 梅酒 苏兹</p>
+  </div>
+  <div class="card">
+      <img src="eden.png" alt="Cocktail4">
+      <h2>乐园</h2>
+      <p>伏特加 梅兹卡尔<br>椰油洗朗姆 干雪莉<br>苦艾酒 黑巧克力</p>
+    </div>
+    <div class="card">
+      <img src="raven.png" alt="Cocktail4">
+      <h2>乌鸦</h2>
+      <p>印尼香料朗姆<br>咖啡 苦艾酒 <br>黑巧克力 白巧克力</p>
+    </div>
+  </div>
+
+  <script>
+    function goBack() {
+      window.location.href = "http://127.0.0.1:3000/4Pageinmaking";
+    }
+  </script>
+</body>
+</html>
