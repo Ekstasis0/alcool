@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YELLOW FEVER: HOME</title>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f4f3ed;
+    font-size: 16px;
+  }
+  header {
+    background-color: #f4f3ed;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .menu-icon {
+    cursor: pointer;
+    color: #000000;
+    font-size: 24px;
+    padding: 0 20px;
+  }
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* 隐藏默认菜单 */
+    position: absolute; /* 绝对定位 */
+    top: 100%; /* 位于菜单图标下方 */
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .menu a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown.active ul {
+    display: flex; /* 显示下拉菜单 */
+  }
+  .content {
+    text-align: center;
+    padding: 20px;
+  }
+  .content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .half-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: calc(90% - 10px);
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+  }
+  .half-card img {
+    width: 30%;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 1px;
+  }
+  .half-card-content{
+    width: 50%;
+    padding: 20 20px;
+  }
+  .half-card-content button {
+    margin-top: 25px;
+  }
+  .half-card h2 {
+    font-size: 12px;
+  }
+  .half-card p {
+    font-size: 12px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+  }
+  .half-card:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 10;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+  }
+  .line {
+    position:absolute;
+    top: -10px;
+    left:10;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+  }
+  .tab4-text {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1px;
+    padding: 1px;
+  }
+  @media screen and (max-width: 768px) {
+    .menu ul {
+      display: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="menu">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <div class="dropdown">
+      <ul>
+        <li><a href=" " onclick="showHomePageContent('home')">Home</a ></li>
+        <li><a href="#" onclick="showHomePageContent('menu')">Menu</a ></li>
+        <li><a href="#" onclick="showHomePageContent('trick')">Trick</a ></li>
+        <li><a href="#" onclick="showHomePageContent('contact')">Contact</a ></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="content" id="home-content">
+  <img src="founder.png" alt="image1">
+</div>
+
+<script>
+  document.querySelector('.menu-icon').addEventListener('click', function() {
+    var dropdown = document.querySelector('.dropdown');
+    dropdown.classList.toggle('active');
+  });
+
+  // Close dropdown when clicking outside of it
+  document.body.addEventListener('click', function(event) {
+    var dropdown = document.querySelector('.dropdown');
+    if (!event.target.closest('.menu') && !event.target.closest('.dropdown')) {
+      dropdown.classList.remove('active');
+    }
+  });
+
+  function showHomePageContent(contentType) {
+    var homeContent = document.getElementById('home-content');
+    // Hide all content initially
+    homeContent.style.display = 'none';
+    
+    // Show content based on contentType
+    switch (contentType) {
+      case 'home':
+        homeContent.innerHTML = ``;
+        break;
+      case 'menu':
+        homeContent.innerHTML = `
+    <div class="half-card" style="position: relative;">
+    <div class="line"></div>
+      <img src="osho.png" alt="1">
+      <div class="half-card-content"><h2>01 The Martini</h2>
+      <button onclick="openSecondaryPage('secondary_page.html')">Read More</button>
+      </div>
+    </div>
+
+    <div class="half-card">
+      <img src="osho.png" alt="2">
+      <div class="half-card-content"><h2>02 The Sidecar</h2>
+      <button onclick="openSecondaryPage('secondary_page.html')">Read More</button>
+      </div>
+    </div>
+
+    <div class="half-card">
+      <img src="osho.png" alt="1">
+      <div class="half-card-content"><h2>03 The Old Fashioned</h2>
+      <button onclick="openSecondaryPage('secondary_page.html')">Read More</button>
+      </div>
+    </div>
+
+    <div class="half-card">
+      <img src="osho.png" alt="1">
+      <div class="half-card-content"><h2>04 The Daiquiri</h2>
+      <button onclick="openSecondaryPage('secondary_page.html')">Read More</button>
+      </div>
+    </div>
+
+    <div class="half-card">
+      <img src="osho.png" alt="1">
+      <div class="half-card-content"><h2>05 The Highball</h2>
+      <button onclick="openSecondaryPage('secondary_page.html')">Read More</button>
+      </div>
+    </div>
+
+    <div class="half-card">
+      <img src="osho.png" alt="1">
+      <div class="half-card-content"><h2>06 The Flip</h2>
+      <button onclick="openSecondaryPage('secondary_page.html')">Read More</button>
+      </div>
+    </div>
+  </div>
+        `;
+        break;
+      case 'trick':
+        homeContent.innerHTML = `
+          <h2>Discover Our Trick</h2>
+          <p>To be developed:)</p>
+        `;
+        break;
+      case 'contact':
+        homeContent.innerHTML = `
+          <h2>家屋概要</h2>
+          <p>
+          
+        `;
+        break;
+      default:
+        // Show default content if no match found
+        homeContent.innerHTML = `
+          <h2>Welcome to Yellow Fever!</h2>
+        `;
+    }
+    // Display the updated content
+    homeContent.style.display = 'block';
+  }
+  function openSecondaryPage(url) {
+      window.open(url, "_blank");
+    }
+</script>
+
+</body>
+</html>
