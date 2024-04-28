@@ -121,6 +121,44 @@
     height: 1px;
     background-color: #000;
   }
+  .trick-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .trick-button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #eee;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+    font-size: small;
+    border-radius: 50%;
+  }
+  .grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 30px;
+  }
+  .cell {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
+  .selected {
+    background-color: yellow;
+  }
+
   .tab4-text {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 1px;
@@ -227,10 +265,32 @@
         break;
       case 'trick':
         homeContent.innerHTML = `
-          <h2>Discover Our Trick</h2>
-          <p>To be developed:)</p>
+          <h2>把命運交給老天</h2>
+          <div class="trick-container">
+            <div class="trick-button" onclick="spin()"><b>Tab</b></div>
+            <div class="grid-container">
+              <div class="grid">
+              <div class="cell" id="fruit">Fruity</div>
+              <div class="cell" id="smoky">Smoky</div>
+              <div class="cell" id="spicy">Spicy</div>
+              <div class="cell" id="bubbly">Sparkling</div>
+              <div class="cell" id="herbal">Herbal</div>
+              <div class="cell" id="creamy">Creamy</div>
+              <div class="cell" id="strong">Strong</div>
+              <div class="cell" id="light">Light</div>
+              <div class="cell" id="tropical">Tropical</div>
+              <div class="cell" id="sweet">Sweet</div>
+              <div class="cell" id="classic">Classic</div>
+              <div class="cell" id="fancy">Fancy</div>
+              <div class="cell" id="tiki">Jungle</div>
+              <div class="cell" id="russ">Russian</div>
+              <div class="cell" id="dry">Dry</div>
+              <br>
+            </div>
+          </div>
         `;
         break;
+
       case 'contact':
         homeContent.innerHTML = `
           <img src="founder2.jpg">
@@ -240,21 +300,39 @@
             <br>Multi-talented Barback
             <br>@陳
           </p>
-          
+        
         `;
         break;
       default:
-        // Show default content if no match found
         homeContent.innerHTML = `
           <h2>Welcome to Yellow Fever!</h2>
         `;
     }
-    // Display the updated content
     homeContent.style.display = 'block';
   }
   function openSecondaryPage(url) {
       window.open(url, "_blank");
     }
+
+    function spin() {
+    var cells = document.querySelectorAll('.cell');
+    var interval = setInterval(function() {
+
+      var prevSelected = document.querySelector('.selected');
+      if (prevSelected) {
+        prevSelected.classList.remove('selected');
+      }
+
+      // Randomly select a cell and add selected class
+      var randomIndex = Math.floor(Math.random() * cells.length);
+      cells[randomIndex].classList.add('selected');
+    }, 100); // Change cell every 0.5 seconds
+
+    // Stop spinning after 3 seconds
+    setTimeout(function() {
+      clearInterval(interval);
+    }, 3000);
+  }
 </script>
 
 </body>
