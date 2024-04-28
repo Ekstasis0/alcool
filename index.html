@@ -140,10 +140,10 @@
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <div class="dropdown">
       <ul>
-        <li><a href=" " onclick="showHomePageContent('home')">Home</a ></li>
-        <li><a href="#" onclick="showHomePageContent('menu')">Menu</a ></li>
-        <li><a href="#" onclick="showHomePageContent('trick')">Trick</a ></li>
-        <li><a href="#" onclick="showHomePageContent('contact')">Contact</a ></li>
+        <li><a href=" " onclick="showHomePageContent('home')">Home</a></li>
+        <li><a href="#" onclick="showHomePageContent('menu')">Menu</a></li>
+        <li><a href="#" onclick="showHomePageContent('trick')">Trick</a></li>
+        <li><a href="#" onclick="showHomePageContent('contact')">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -179,6 +179,7 @@
         break;
       case 'menu':
         homeContent.innerHTML = `
+      <h2 style="text-align: left; margin-left: 20px;">Selected</h2>
     <div class="half-card" style="position: relative;">
     <div class="line"></div>
       <img src="osho.png" alt="1">
@@ -232,8 +233,13 @@
         break;
       case 'contact':
         homeContent.innerHTML = `
-          <h2>家屋概要</h2>
-          <p>
+          <img src="founder2.jpg">
+          <h2>黃種人概要</h2>
+          <p style="line height: 12px;">Founder, Mixologist and Fortune-teller
+            <br>@虞<br>
+            <br>Multi-talented Barback
+            <br>@陳
+          </p>
           
         `;
         break;
