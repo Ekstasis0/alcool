@@ -222,7 +222,7 @@
     <div class="line"></div>
       <img src="osho.png" alt="1">
       <div class="half-card-content"><h2>01 The Martini</h2>
-      <button onclick="openSecondaryPage('secondary_page.html')">Read More</button>
+      <button onclick="openSecondaryPage('martini.html')">Read More</button>
       </div>
     </div>
 
