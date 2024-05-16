@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daiquiri 大吉利</title>
+</head>
+
+<style>
+  body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f3ed;
+  }
+  .mobile-alert-banner {
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color:#f4f3ed;
+    color:#ebebeb;
+  }
+  .mobile-alert-banner p {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    color:#0b0b0b;
+  }
+  header {
+    background-color:#f4f3ed;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+  }
+  header a {
+    color: #f4f3ed;
+    text-decoration: none;
+    font-size: x-small;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    width: calc(40% - 20px);
+    margin: 10px;
+    background-color:#f4f3ed;
+    border-radius: 1px;
+    text-align: center;
+    padding:10px;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1px;
+    margin-bottom: 1px;
+  }
+  .card h2 {
+    font-size: 12px;
+    margin-bottom: 1px;
+    line-height: 5px;
+    color:#505050
+  }
+  .card p {
+    font-size: 10px;
+    margin-bottom: 1px;
+    color:#9a9a9a;
+  }
+  footer {
+    background-color: #ececec;
+    color: #454545;
+    padding: 20px;
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    .menu ul {
+      display: none;
+    }
+  }
+</style>
+
+<body>
+  <div class="mobile-alert-banner">
+    <a href="#" onclick="goBack()"><p>HOME</p></a>
+  </div>
+  <header>
+    <h2>Daiquiri</h2>
+    <p>—</p>
+  </header>
+
+  <div class="container tab-content active">
+  <div class="card">
+    <img src="noodle.jpg" alt="Cocktail3">
+    <h2>白朗姆</h2>
+    <h2>Cold Noodle</h2>
+    <p>青瓜 菠萝 椰子水<br>青柠 香油</p>
+  </div>
+  <div class="card">
+    <img src="paw.png" alt="Cocktail4">
+    <h2>狗爪爪</h2>
+    <h2>Puppy Paw</h2>
+    <p>威士忌 斑斓 乌龙<br>葡萄柚 酸奶（洗）</p>
+  </div>
+  <div class="card">
+      <img src="capresse.jpg" alt="Cocktail4">
+      <h2>白人饭</h2>
+      <h2>Caprese</h2>
+      <p>威士忌 罗勒 番茄<br>青柠 奶油（洗）</p>
+    </div>
+    <div class="card">
+      <img src=".png" alt="Cocktail4">
+      <h2>细水长流</h2>
+      <h2>Tendresse</h2>
+      <p>威士忌 红豆 斑斓<br>黄柠 椰乳（洗）</p>
+    </div>
+    <div class="card">
+      <img src="hill.jpg" alt="Cocktail1">
+      <h2>野山坡</h2>
+      <h2>Hillside</h2>
+      <p>紫苏烧酒 柚子 紫苏<br>黄柠 龙舌兰</p>
+    </div>
+    <div class="card">
+      <img src="autumn.jpg" alt="Cocktail1">
+      <h2>晚秋露台</h2>
+      <h2>Late Autumn Affair</h2>
+      <p>白兰地 苹果 枫糖<br>黄柠 豆奶（洗）</p>
+    </div>
+    <div class="card">
+      <img src="bano.jpg" alt="Cocktail1">
+      <h2>老墨浴场2.0</h2>
+      <h2>Baño Mexicano 2.0</h2>
+      <p>梅兹卡尔 菠萝<br>青柠 盐 胡椒</p>
+    </div>
+    <div class="card">
+      <img src="sleep.jpg" alt="Cocktail1">
+      <h2>酣睡</h2>
+      <h2>Sound Sleep</h2>
+      <p>潘娜托尼面包（洗）<br>威士忌 黄柠 蛋清</p>
+    </div>
+    <div class="card">
+      <img src="classover.jpg" alt="Cocktail1">
+      <h2>放学</h2>
+      <h2>Class Over</h2>
+      <p>威士忌 山楂<br> 苹果 乌龙茶</p>
+    </div>
+    <div class="card">
+      <img src="rain.jpg" alt="Cocktail1">
+      <h2>淋雨</h2>
+      <h2>Soaked in Rain</h2>
+      <p>干金酒 梨 茉莉花茶</p>
+    </div>
+    <div class="card">
+      <img src="fortune.jpg" alt="Cocktail1">
+      <h2>占卜</h2>
+      <h2>Fortune Telling</h2>
+      <p>干金酒 黑葡萄<br>绿茶 青柠</p>
+    </div>
+    <div class="card">
+      <img src=".png" alt="Cocktail1">
+      <h2>搞破鞋</h2>
+      <h2>Adventure</h2>
+      <p>伏特加 蜜桃 <br>乌龙 牛奶（洗）</p>
+    </div>
+    <div class="card">
+      <img src="luckydog.jpg" alt="Cocktail1">
+      <h2>中奖</h2>
+      <h2>Lucky Dog</h2>
+      <p>威士忌 葡萄柚<br>黄桃 黄柠</p>
+    </div>
+    <div class="card">
+      <img src="playgoing.jpg" alt="Cocktail1">
+      <h2>看戏</h2>
+      <h2>Playgoing</h2>
+      <p>干金酒 大吟酿<br>荔枝 黄柠</p>
+    </div>
+    <div class="card">
+      <img src="blackberry.jpg" alt="Cocktail1">
+      <h2>黑莓塔</h2>
+      <h2>Blackberry Tart</h2>
+      <p>伏特加 黑莓<br>苹果 黄柠</p>
+    </div>
+    <div class="card">
+      <img src="halekulani.jpg" alt="Cocktail1">
+      <h2>哈列库拉尼</h2>
+      <h2>Halekulani</h2>
+      <p>威士忌 菠萝<br>橙子 黄柠</p>
+    </div>
+    <div class="card">
+      <img src="calma.jpg" alt="Cocktail1">
+      <h2>绿卡</h2>
+      <h2>Calma</h2>
+      <p>皮斯科 青苹果<br>莳萝 青柠 蛋清</p>
+    </div>
+    <div class="card">
+      <img src="sol.jpg" alt="Cocktail1">
+      <h2>早读</h2>
+      <h2>Sol Levante</h2>
+      <p>威士忌 西柚<br>苹果 伯爵茶糖浆 黄柠</p>
+    </div>
+  </div>
+  <script>
+    function goBack() {
+      window.location.href = "https://ekstasis0.github.io/alcool/";
+    }
+    document.querySelector('.menu-icon').addEventListener('click', function() {
+    var dropdown = document.querySelector('.dropdown');
+    dropdown.classList.toggle('active');
+  });
+  </script>
+</body>
+</html>
