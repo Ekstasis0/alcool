@@ -236,28 +236,28 @@
     <div class="half-card">
       <img src="osho.png" alt="1">
       <div class="half-card-content"><h2>03 The Old Fashioned</h2>
-      <button onclick="openSecondaryPage('oldfashioned.html')">Read More</button>
+      <button onclick="openSecondaryPage('secondary_page.html')">Read More</button>
       </div>
     </div>
 
     <div class="half-card">
       <img src="osho.png" alt="1">
       <div class="half-card-content"><h2>04 The Daiquiri</h2>
-      <button onclick="openSecondaryPage('daiquiri.html')">Read More</button>
+      <button onclick="openSecondaryPage('secondary_page.html')">Read More</button>
       </div>
     </div>
 
     <div class="half-card">
       <img src="osho.png" alt="1">
       <div class="half-card-content"><h2>05 The Highball</h2>
-      <button onclick="openSecondaryPage('highball.html')">Read More</button>
+      <button onclick="openSecondaryPage('secondary_page.html')">Read More</button>
       </div>
     </div>
 
     <div class="half-card">
       <img src="osho.png" alt="1">
       <div class="half-card-content"><h2>06 The Flip</h2>
-      <button onclick="openSecondaryPage('flip.html')">Read More</button>
+      <button onclick="openSecondaryPage('secondary_page.html')">Read More</button>
       </div>
     </div>
   </div>
@@ -277,14 +277,14 @@
               <div class="cell" id="herbal">Herbal</div>
               <div class="cell" id="creamy">Creamy</div>
               <div class="cell" id="strong">Strong</div>
-              <div class="cell" id="medium">Medium</div>
-              <div class="cell" id="light">Light</div>
+              <div class="cell" id="light">Medium</div>
+              <div class="cell" id="tropical">Light</div>
               <div class="cell" id="sweet">Sweet</div>
-              <div class="cell" id="sour">Sour</div>
-              <div class="cell" id="dry">Dry</div>
-              <div class="cell" id="green">Green</div>
-              <div class="cell" id="red">Red</div>
-              <div class="cell" id="pink">Pink</div>
+              <div class="cell" id="classic">Sour</div>
+              <div class="cell" id="fancy">Dry</div>
+              <div class="cell" id="tiki">Green</div>
+              <div class="cell" id="russ">Red</div>
+              <div class="cell" id="dry">Pink</div>
               <br>
             </div>
           </div>
