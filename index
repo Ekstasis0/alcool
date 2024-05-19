@@ -219,45 +219,46 @@
         homeContent.innerHTML = `
       <h2 style="text-align: left; margin-left: 20px;">Selected</h2>
     <div class="half-card" style="position: relative;">
+
     <div class="line"></div>
-      <img src="osho.png" alt="1">
+      <img src="martini.jpg" alt="1">
       <div class="half-card-content"><h2>01 The Martini</h2>
       <button onclick="openSecondaryPage('martini.html')">Read More</button>
       </div>
     </div>
 
     <div class="half-card">
-      <img src="osho.png" alt="2">
+      <img src="sidecar.jpg" alt="2">
       <div class="half-card-content"><h2>02 The Sidecar</h2>
       <button onclick="openSecondaryPage('sidecar.html')">Read More</button>
       </div>
     </div>
 
     <div class="half-card">
-      <img src="osho.png" alt="1">
+      <img src="oldfashioned.pic.jpg" alt="1">
       <div class="half-card-content"><h2>03 The Old Fashioned</h2>
-      <button onclick="openSecondaryPage('secondary_page.html')">Read More</button>
+      <button onclick="openSecondaryPage('oldfashioned.html')">Read More</button>
       </div>
     </div>
 
     <div class="half-card">
-      <img src="osho.png" alt="1">
+      <img src="daiquiri.jpg" alt="1">
       <div class="half-card-content"><h2>04 The Daiquiri</h2>
-      <button onclick="openSecondaryPage('secondary_page.html')">Read More</button>
+      <button onclick="openSecondaryPage('daiquiri.html')">Read More</button>
       </div>
     </div>
 
     <div class="half-card">
-      <img src="osho.png" alt="1">
+      <img src="highball2.jpg" alt="1">
       <div class="half-card-content"><h2>05 The Highball</h2>
-      <button onclick="openSecondaryPage('secondary_page.html')">Read More</button>
+      <button onclick="openSecondaryPage('highball.html')">Read More</button>
       </div>
     </div>
 
     <div class="half-card">
-      <img src="osho.png" alt="1">
+      <img src="flip.pic.jpg" alt="1">
       <div class="half-card-content"><h2>06 The Flip</h2>
-      <button onclick="openSecondaryPage('secondary_page.html')">Read More</button>
+      <button onclick="openSecondaryPage('flip.html')">Read More</button>
       </div>
     </div>
   </div>
@@ -277,14 +278,14 @@
               <div class="cell" id="herbal">Herbal</div>
               <div class="cell" id="creamy">Creamy</div>
               <div class="cell" id="strong">Strong</div>
-              <div class="cell" id="light">Medium</div>
-              <div class="cell" id="tropical">Light</div>
+              <div class="cell" id="medium">Medium</div>
+              <div class="cell" id="light">Light</div>
               <div class="cell" id="sweet">Sweet</div>
-              <div class="cell" id="classic">Sour</div>
-              <div class="cell" id="fancy">Dry</div>
-              <div class="cell" id="tiki">Green</div>
-              <div class="cell" id="russ">Red</div>
-              <div class="cell" id="dry">Pink</div>
+              <div class="cell" id="sour">Sour</div>
+              <div class="cell" id="dry">Dry</div>
+              <div class="cell" id="green">Green</div>
+              <div class="cell" id="red">Red</div>
+              <div class="cell" id="pink">Pink</div>
               <br>
             </div>
           </div>
@@ -311,7 +312,7 @@
     homeContent.style.display = 'block';
   }
   function openSecondaryPage(url) {
-      window.open(url, "_blank");
+      window.location.href = url;
     }
 
     function spin() {
